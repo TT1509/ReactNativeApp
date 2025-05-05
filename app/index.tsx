@@ -37,9 +37,9 @@ const styles = StyleSheet.create({
   },
   buttonGroup: {
     alignItems: "center",
-    gap: 16, // optional: supported in RN >= 0.71 or via React Native Web
+    gap: 16, 
   },
   separator: {
-    color: "#6B7280", // Tailwind gray-500
+    color: "#6B7280", 
   },
 });
