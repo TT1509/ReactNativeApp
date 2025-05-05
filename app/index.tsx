@@ -1,5 +1,7 @@
 import Button from "@/components/Button";
-import { StyleSheet, Text, View } from "react-native";
+import { Dimensions, StyleSheet, Text, View } from "react-native";
+
+const { width, height } = Dimensions.get('window');
 
 export default function Index() {
   return (
@@ -23,21 +25,22 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    paddingHorizontal: 16,
+    paddingHorizontal: width * 0.05,
+    backgroundColor: "#fff",
   },
   header: {
     alignItems: "center",
-    paddingHorizontal: 20,
-    marginBottom: 150,
+    paddingHorizontal: width * 0.05,
+    marginBottom: height * 0.15,
   },
   title: {
     textAlign: "left",
-    fontSize: 24,
+    fontSize: width * 0.08,
     fontWeight: "600",
   },
   buttonGroup: {
     alignItems: "center",
-    gap: 16, 
+    gap: width * 0.02, 
   },
   separator: {
     color: "#6B7280", 
